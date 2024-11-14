@@ -1,0 +1,376 @@
+---
+
+#######################################
+### ENABLE VARS
+#######################################
+
+### CENTOS
+
+# foreman_enable_centos: false
+
+# foreman_enable_centos_default_ccv: false
+# foreman_enable_centos_default_ak: "{{ foreman_enable_centos_default_ccv | bool }}"
+
+### CENTOS 7
+
+# foreman_enable_centos7: false
+# foreman_enable_centos7_kickstart: "{{ foreman_enable_centos7 | bool }}"
+
+# foreman_enable_centos7_default_ccv: "{{ foreman_enable_centos_default_ccv | bool }}"
+# foreman_enable_centos7_default_ak: "{{ foreman_enable_centos_default_ak | bool }}"
+
+# foreman_enable_centos70: false
+# foreman_enable_centos71: false
+# foreman_enable_centos72: false
+# foreman_enable_centos73: false
+# foreman_enable_centos74: false
+# foreman_enable_centos75: false
+# foreman_enable_centos76: false
+# foreman_enable_centos77: false
+# foreman_enable_centos78: false
+# foreman_enable_centos79: false
+
+# foreman_enable_centos70_kickstart: "{{ foreman_enable_centos70 | bool }}"
+# foreman_enable_centos71_kickstart: "{{ foreman_enable_centos71 | bool }}"
+# foreman_enable_centos72_kickstart: "{{ foreman_enable_centos72 | bool }}"
+# foreman_enable_centos73_kickstart: "{{ foreman_enable_centos73 | bool }}"
+# foreman_enable_centos74_kickstart: "{{ foreman_enable_centos74 | bool }}"
+# foreman_enable_centos75_kickstart: "{{ foreman_enable_centos75 | bool }}"
+# foreman_enable_centos76_kickstart: "{{ foreman_enable_centos76 | bool }}"
+# foreman_enable_centos77_kickstart: "{{ foreman_enable_centos77 | bool }}"
+# foreman_enable_centos78_kickstart: "{{ foreman_enable_centos78 | bool }}"
+# foreman_enable_centos79_kickstart: "{{ foreman_enable_centos79 | bool }}"
+
+# foreman_enable_centos70_default_ccv: "{{ foreman_enable_centos7_default_ccv | bool }}"
+# foreman_enable_centos71_default_ccv: "{{ foreman_enable_centos7_default_ccv | bool }}"
+# foreman_enable_centos72_default_ccv: "{{ foreman_enable_centos7_default_ccv | bool }}"
+# foreman_enable_centos73_default_ccv: "{{ foreman_enable_centos7_default_ccv | bool }}"
+# foreman_enable_centos74_default_ccv: "{{ foreman_enable_centos7_default_ccv | bool }}"
+# foreman_enable_centos75_default_ccv: "{{ foreman_enable_centos7_default_ccv | bool }}"
+# foreman_enable_centos76_default_ccv: "{{ foreman_enable_centos7_default_ccv | bool }}"
+# foreman_enable_centos77_default_ccv: "{{ foreman_enable_centos7_default_ccv | bool }}"
+# foreman_enable_centos78_default_ccv: "{{ foreman_enable_centos7_default_ccv | bool }}"
+# foreman_enable_centos79_default_ccv: "{{ foreman_enable_centos7_default_ccv | bool }}"
+
+# foreman_enable_centos70_default_ak: "{{ foreman_enable_centos70_default_ccv | bool }}"
+# foreman_enable_centos71_default_ak: "{{ foreman_enable_centos71_default_ccv | bool }}"
+# foreman_enable_centos72_default_ak: "{{ foreman_enable_centos72_default_ccv | bool }}"
+# foreman_enable_centos73_default_ak: "{{ foreman_enable_centos73_default_ccv | bool }}"
+# foreman_enable_centos74_default_ak: "{{ foreman_enable_centos74_default_ccv | bool }}"
+# foreman_enable_centos75_default_ak: "{{ foreman_enable_centos75_default_ccv | bool }}"
+# foreman_enable_centos76_default_ak: "{{ foreman_enable_centos76_default_ccv | bool }}"
+# foreman_enable_centos77_default_ak: "{{ foreman_enable_centos77_default_ccv | bool }}"
+# foreman_enable_centos78_default_ak: "{{ foreman_enable_centos78_default_ccv | bool }}"
+# foreman_enable_centos79_default_ak: "{{ foreman_enable_centos79_default_ccv | bool }}"
+
+# foreman_enable_centos7_dotnet: false
+# foreman_enable_centos7_sig_sclo: "{{ foreman_enable_centos7 | bool }}"
+# foreman_enable_centos7_sig_opstools: "{{ foreman_enable_centos7_sig_virtualization_ovirt42 | bool or
+#                                          foreman_enable_centos7_sig_virtualization_ovirt43 | bool }}"
+# foreman_enable_centos7_sig_nfv: false
+# foreman_enable_centos7_sig_nfv_common: "{{ foreman_enable_centos7_sig_nfv | bool or
+#                                            foreman_enable_centos7_sig_nfv_fdio | bool }}"
+# foreman_enable_centos7_sig_nfv_fdio: false
+
+# foreman_enable_centos7_sig_configmanagement: "{{ foreman_enable_centos7 | bool }}"
+# foreman_enable_centos7_sig_configmanagement_ansible26: false
+# foreman_enable_centos7_sig_configmanagement_ansible27: false
+# foreman_enable_centos7_sig_configmanagement_ansible28: false
+# foreman_enable_centos7_sig_configmanagement_ansible29: "{{ foreman_enable_centos7_sig_configmanagement | bool or
+#                                                            foreman_enable_centos7_sig_paas_openshift_origin311 | bool }}"
+
+# foreman_enable_centos7_sig_paas: false
+# foreman_enable_centos7_sig_paas_openshift_origin: false
+# foreman_enable_centos7_sig_paas_openshift_origin13: false
+# foreman_enable_centos7_sig_paas_openshift_origin14: false
+# foreman_enable_centos7_sig_paas_openshift_origin15: false
+# foreman_enable_centos7_sig_paas_openshift_origin36: false
+# foreman_enable_centos7_sig_paas_openshift_origin37: false
+# foreman_enable_centos7_sig_paas_openshift_origin39: false
+# foreman_enable_centos7_sig_paas_openshift_origin310: false
+# foreman_enable_centos7_sig_paas_openshift_origin311: "{{ foreman_enable_centos7_sig_paas | bool }}"
+
+# foreman_enable_centos7_sig_cloud: false
+# foreman_enable_centos7_sig_cloud_openstack_queens: false
+# foreman_enable_centos7_sig_cloud_openstack_rocky: false
+# foreman_enable_centos7_sig_cloud_openstack_stein: false
+# foreman_enable_centos7_sig_cloud_openstack_train: "{{ foreman_enable_centos7_sig_cloud | bool }}"
+# foreman_enable_centos7_sig_cloud_openstack_queens_tested: false
+# foreman_enable_centos7_sig_cloud_openstack_rocky_tested: false
+# foreman_enable_centos7_sig_cloud_openstack_stein_tested: false
+# foreman_enable_centos7_sig_cloud_openstack_train_tested: false
+
+# foreman_enable_centos7_sig_virtualization: false
+# foreman_enable_centos7_sig_virtualization_azure: false
+# foreman_enable_centos7_sig_virtualization_ovirt42: false
+# foreman_enable_centos7_sig_virtualization_ovirt43: "{{ foreman_enable_centos7_sig_virtualization | bool }}"
+# foreman_enable_centos7_sig_virtualization_qemu_ev: "{{ foreman_enable_centos7_sig_virtualization_ovirt42 | bool or
+#                                                        foreman_enable_centos7_sig_virtualization_ovirt43 | bool or
+#                                                        foreman_enable_centos7_sig_cloud_openstack_queens | bool or
+#                                                        foreman_enable_centos7_sig_cloud_openstack_rocky | bool or
+#                                                        foreman_enable_centos7_sig_cloud_openstack_stein | bool or
+#                                                        foreman_enable_centos7_sig_cloud_openstack_train | bool }}"
+# foreman_enable_centos7_sig_virtualization_xen_46: false
+# foreman_enable_centos7_sig_virtualization_xen_48: false
+# foreman_enable_centos7_sig_virtualization_xen_410: false
+# foreman_enable_centos7_sig_virtualization_xen_412: false
+# foreman_enable_centos7_sig_virtualization_xen_413: false
+# foreman_enable_centos7_sig_virtualization_xen_414: false
+# foreman_enable_centos7_sig_virtualization_xen_epel: "{{ foreman_enable_centos7_sig_virtualization_xen_46 | bool or
+#                                                         foreman_enable_centos7_sig_virtualization_xen_48 | bool or
+#                                                         foreman_enable_centos7_sig_virtualization_xen_410 | bool or
+#                                                         foreman_enable_centos7_sig_virtualization_xen_412 | bool or
+#                                                         foreman_enable_centos7_sig_virtualization_xen_413 | bool or
+#                                                         foreman_enable_centos7_sig_virtualization_xen_414 | bool }}"
+
+# foreman_enable_centos7_sig_storage: false
+# foreman_enable_centos7_sig_storage_samba411: false
+# foreman_enable_centos7_sig_storage_gluster40: false
+# foreman_enable_centos7_sig_storage_gluster41: false
+# foreman_enable_centos7_sig_storage_gluster5: false
+# foreman_enable_centos7_sig_storage_gluster6: false
+# foreman_enable_centos7_sig_storage_gluster7: false
+# foreman_enable_centos7_sig_storage_gluster8: false
+# foreman_enable_centos7_sig_storage_gluster9: "{{ foreman_enable_centos7_sig_virtualization_ovirt42 | bool or
+#                                                  foreman_enable_centos7_sig_virtualization_ovirt43 | bool }}"
+# foreman_enable_centos7_sig_storage_ceph_jewel: false
+# foreman_enable_centos7_sig_storage_ceph_luminous: "{{ foreman_enable_centos7_sig_cloud_openstack_queens | bool or
+#                                                       foreman_enable_centos7_sig_cloud_openstack_rocky | bool }}"
+# foreman_enable_centos7_sig_storage_ceph_nautilus: "{{ foreman_enable_centos7_sig_cloud_openstack_stein | bool or
+#                                                       foreman_enable_centos7_sig_cloud_openstack_train | bool }}"
+# foreman_enable_centos7_sig_storage_nfs_ganesha28: "{{ foreman_enable_centos7_sig_storage_ceph_nautilus | bool }}"
+# foreman_enable_centos7_sig_storage_nfs_ganesha30: false
+# foreman_enable_centos7_sig_storage_nfs_ganesha4: false
+
+### CENTOS 8
+
+# foreman_enable_centos8: false
+# foreman_enable_centos8_kickstart: "{{ foreman_enable_centos8 | bool }}"
+
+# foreman_enable_centos8_default_ccv: "{{ foreman_enable_centos_default_ccv | bool }}"
+# foreman_enable_centos8_default_ak: "{{ foreman_enable_centos_default_ak | bool }}"
+
+# foreman_enable_centos80: false
+# foreman_enable_centos81: false
+# foreman_enable_centos82: false
+# foreman_enable_centos83: false
+# foreman_enable_centos84: false
+# foreman_enable_centos85: false
+
+# foreman_enable_centos80_kickstart: "{{ foreman_enable_centos80 | bool }}"
+# foreman_enable_centos81_kickstart: "{{ foreman_enable_centos81 | bool }}"
+# foreman_enable_centos82_kickstart: "{{ foreman_enable_centos82 | bool }}"
+# foreman_enable_centos83_kickstart: "{{ foreman_enable_centos83 | bool }}"
+# foreman_enable_centos84_kickstart: "{{ foreman_enable_centos84 | bool }}"
+# foreman_enable_centos85_kickstart: "{{ foreman_enable_centos85 | bool }}"
+
+# foreman_enable_centos80_default_ccv: "{{ foreman_enable_centos8_default_ccv | bool }}"
+# foreman_enable_centos81_default_ccv: "{{ foreman_enable_centos8_default_ccv | bool }}"
+# foreman_enable_centos82_default_ccv: "{{ foreman_enable_centos8_default_ccv | bool }}"
+# foreman_enable_centos83_default_ccv: "{{ foreman_enable_centos8_default_ccv | bool }}"
+# foreman_enable_centos84_default_ccv: "{{ foreman_enable_centos8_default_ccv | bool }}"
+# foreman_enable_centos85_default_ccv: "{{ foreman_enable_centos8_default_ccv | bool }}"
+
+# foreman_enable_centos80_default_ak: "{{ foreman_enable_centos80_default_ccv | bool }}"
+# foreman_enable_centos81_default_ak: "{{ foreman_enable_centos81_default_ccv | bool }}"
+# foreman_enable_centos82_default_ak: "{{ foreman_enable_centos82_default_ccv | bool }}"
+# foreman_enable_centos83_default_ak: "{{ foreman_enable_centos83_default_ccv | bool }}"
+# foreman_enable_centos84_default_ak: "{{ foreman_enable_centos84_default_ccv | bool }}"
+# foreman_enable_centos85_default_ak: "{{ foreman_enable_centos85_default_ccv | bool }}"
+
+# foreman_enable_centos8_sig_opstools: "{{ foreman_enable_centos8_sig_virtualization_ovirt44 | bool }}"
+# foreman_enable_centos8_sig_nfv: false
+# foreman_enable_centos8_sig_nfv_extras: false
+# foreman_enable_centos8_sig_nfv_openvswitch: "{{ foreman_enable_centos8_sig_cloud_openstack_ussuri | bool or
+#                                                 foreman_enable_centos8_sig_cloud_openstack_victoria | bool }}"
+
+# foreman_enable_centos8_sig_configmanagement: "{{ foreman_enable_centos8 | bool }}"
+# foreman_enable_centos8_sig_configmanagement_ansible29: "{{ foreman_enable_centos8_sig_configmanagement | bool }}"
+
+# foreman_enable_centos8_sig_kmods: false
+# foreman_enable_centos8_sig_kmods_main: "{{ foreman_enable_centos8_sig_kmods | bool or
+#                                            foreman_enable_centos8_sig_kmods_rebuild | bool }}"
+# foreman_enable_centos8_sig_kmods_rebuild: false
+
+# foreman_enable_centos8_sig_messaging: false
+# foreman_enable_centos8_sig_messaging_qpid_proton: false
+# foreman_enable_centos8_sig_messaging_rabbitmq38: "{{ foreman_enable_centos8_sig_cloud_openstack_train | bool or
+#                                                      foreman_enable_centos8_sig_cloud_openstack_ussuri | bool or
+#                                                      foreman_enable_centos8_sig_cloud_openstack_victoria | bool }}"
+
+# foreman_enable_centos8_sig_cloud: false
+# foreman_enable_centos8_sig_cloud_openstack_train: false
+# foreman_enable_centos8_sig_cloud_openstack_ussuri: false
+# foreman_enable_centos8_sig_cloud_openstack_victoria: "{{ foreman_enable_centos8_sig_cloud | bool }}"
+# foreman_enable_centos8_sig_cloud_openstack_train_tested: false
+# foreman_enable_centos8_sig_cloud_openstack_ussuri_tested: false
+# foreman_enable_centos8_sig_cloud_openstack_victoria_tested: false
+
+# foreman_enable_centos8_sig_virtualization: false
+# foreman_enable_centos8_sig_virtualization_advanced_virtualization: "{{ foreman_enable_centos8_sig_virtualization_ovirt44 | bool or
+#                                                                        foreman_enable_centos8_sig_virtualization_ovirt45 | bool or
+#                                                                        foreman_enable_centos8_sig_cloud_openstack_train | bool or
+#                                                                        foreman_enable_centos8_sig_cloud_openstack_ussuri | bool or
+#                                                                        foreman_enable_centos8_sig_cloud_openstack_victoria | bool }}"
+# foreman_enable_centos8_sig_virtualization_ovirt44: false
+# foreman_enable_centos8_sig_virtualization_ovirt45: "{{ foreman_enable_centos8_sig_virtualization | bool }}"
+
+# foreman_enable_centos8_sig_storage: false
+# foreman_enable_centos8_sig_storage_samba411: false
+# foreman_enable_centos8_sig_storage_samba412: false
+# foreman_enable_centos8_sig_storage_samba413: false
+# foreman_enable_centos8_sig_storage_samba414: false
+# foreman_enable_centos8_sig_storage_samba415: false
+# foreman_enable_centos8_sig_storage_gluster6: false
+# foreman_enable_centos8_sig_storage_gluster7: false
+# foreman_enable_centos8_sig_storage_gluster8: false
+# foreman_enable_centos8_sig_storage_gluster9: "{{ foreman_enable_centos8_sig_virtualization_ovirt44 | bool }}"
+# foreman_enable_centos8_sig_storage_ceph_nautilus: "{{ foreman_enable_centos8_sig_cloud_openstack_train | bool or
+#                                                       foreman_enable_centos8_sig_cloud_openstack_ussuri | bool or
+#                                                       foreman_enable_centos8_sig_cloud_openstack_victoria | bool }}"
+# foreman_enable_centos8_sig_storage_ceph_octopus: false
+# foreman_enable_centos8_sig_storage_ceph_pacific: false
+# foreman_enable_centos8_sig_storage_nfs_ganesha28: false
+# foreman_enable_centos8_sig_storage_nfs_ganesha30: false
+
+### CENTOS STREAM 8
+
+# foreman_enable_centos_stream8: "{{ foreman_enable_centos | bool }}"
+# foreman_enable_centos_stream8_kickstart: "{{ foreman_enable_centos_stream8 | bool }}"
+
+# foreman_enable_centos_stream8_default_ccv: "{{ foreman_enable_centos_default_ccv | bool }}"
+# foreman_enable_centos_stream8_default_ak: "{{ foreman_enable_centos_default_ak | bool }}"
+
+# foreman_enable_centos_stream8_sig_opstools: "{{ foreman_enable_centos_stream8_sig_virtualization_ovirt44 | bool or
+#                                                 foreman_enable_centos_stream8_sig_virtualization_ovirt45 | bool }}"
+# foreman_enable_centos_stream8_sig_plus: false
+# foreman_enable_centos_stream8_sig_nfv: false
+# foreman_enable_centos_stream8_sig_nfv_extras: false
+# foreman_enable_centos_stream8_sig_nfv_openvswitch: "{{ foreman_enable_centos_stream8_sig_virtualization_ovirt45 | bool or
+#                                                        foreman_enable_centos_stream8_sig_cloud_openstack_ussuri | bool or
+#                                                        foreman_enable_centos_stream8_sig_cloud_openstack_victoria | bool }}"
+
+# foreman_enable_centos_stream8_sig_configmanagement: "{{ foreman_enable_centos_stream8 | bool }}"
+# foreman_enable_centos_stream8_sig_configmanagement_ansible29: "{{ foreman_enable_centos_stream8_sig_configmanagement | bool }}"
+# foreman_enable_centos_stream8_sig_configmanagement_ansible5: false
+
+# foreman_enable_centos_stream8_sig_kmods: false
+# foreman_enable_centos_stream8_sig_kmods_main: "{{ foreman_enable_centos_stream8_sig_kmods | bool }}"
+# foreman_enable_centos_stream8_sig_kmods_rebuild: "{{ foreman_enable_centos_stream8_sig_kmods | bool }}"
+# foreman_enable_centos_stream8_sig_kmods_userspace: "{{ foreman_enable_centos_stream8_sig_kmods | bool }}"
+
+# foreman_enable_centos_stream8_sig_messaging: false
+# foreman_enable_centos_stream8_sig_messaging_qpid_proton: false
+# foreman_enable_centos_stream8_sig_messaging_rabbitmq38: "{{ foreman_enable_centos_stream8_sig_cloud_openstack_train | bool or
+#                                                             foreman_enable_centos_stream8_sig_cloud_openstack_ussuri | bool or
+#                                                             foreman_enable_centos_stream8_sig_cloud_openstack_victoria | bool }}"
+
+# foreman_enable_centos_stream8_sig_cloud: false
+# foreman_enable_centos_stream8_sig_cloud_openstack_train: false
+# foreman_enable_centos_stream8_sig_cloud_openstack_ussuri: false
+# foreman_enable_centos_stream8_sig_cloud_openstack_victoria: "{{ foreman_enable_centos_stream8_sig_cloud | bool }}"
+# foreman_enable_centos_stream8_sig_cloud_openstack_train_tested: false
+# foreman_enable_centos_stream8_sig_cloud_openstack_ussuri_tested: false
+# foreman_enable_centos_stream8_sig_cloud_openstack_victoria_tested: false
+
+# foreman_enable_centos_stream8_sig_virtualization: false
+# foreman_enable_centos_stream8_sig_virtualization_advanced_virtualization: "{{ foreman_enable_centos_stream8_sig_virtualization_ovirt44 | bool or
+#                                                                               foreman_enable_centos_stream8_sig_cloud_openstack_train | bool or
+#                                                                               foreman_enable_centos_stream8_sig_cloud_openstack_ussuri | bool or
+#                                                                               foreman_enable_centos_stream8_sig_cloud_openstack_victoria | bool }}"
+# foreman_enable_centos_stream8_sig_virtualization_ovirt44: false
+# foreman_enable_centos_stream8_sig_virtualization_ovirt45: "{{ foreman_enable_centos_stream8_sig_virtualization | bool }}"
+
+# foreman_enable_centos_stream8_sig_storage: false
+# foreman_enable_centos_stream8_sig_storage_samba411: false
+# foreman_enable_centos_stream8_sig_storage_samba412: false
+# foreman_enable_centos_stream8_sig_storage_samba413: false
+# foreman_enable_centos_stream8_sig_storage_samba414: false
+# foreman_enable_centos_stream8_sig_storage_samba415: false
+# foreman_enable_centos_stream8_sig_storage_samba416: false
+# foreman_enable_centos_stream8_sig_storage_samba417: false
+# foreman_enable_centos_stream8_sig_storage_samba418: false
+# foreman_enable_centos_stream8_sig_storage_gluster6: false
+# foreman_enable_centos_stream8_sig_storage_gluster7: false
+# foreman_enable_centos_stream8_sig_storage_gluster8: false
+# foreman_enable_centos_stream8_sig_storage_gluster9: "{{ foreman_enable_centos_stream8_sig_virtualization_ovirt44 | bool }}"
+# foreman_enable_centos_stream8_sig_storage_gluster10: "{{ foreman_enable_centos_stream8_sig_virtualization_ovirt45 | bool }}"
+# foreman_enable_centos_stream8_sig_storage_gluster11: false
+# foreman_enable_centos_stream8_sig_storage_ceph_nautilus: "{{ foreman_enable_centos_stream8_sig_cloud_openstack_train | bool or
+#                                                              foreman_enable_centos_stream8_sig_cloud_openstack_ussuri | bool or
+#                                                              foreman_enable_centos_stream8_sig_cloud_openstack_victoria | bool }}"
+# foreman_enable_centos_stream8_sig_storage_ceph_octopus: false
+# foreman_enable_centos_stream8_sig_storage_ceph_pacific:  "{{ foreman_enable_centos_stream8_sig_virtualization_ovirt45 | bool }}"
+# foreman_enable_centos_stream8_sig_storage_ceph_quincy: false
+# foreman_enable_centos_stream8_sig_storage_nfs_ganesha28: false
+# foreman_enable_centos_stream8_sig_storage_nfs_ganesha30: false
+
+# foreman_enable_centos_stream8_sig_hyperscale: false
+# foreman_enable_centos_stream8_sig_hyperscale_main: "{{ foreman_enable_centos_stream8_sig_hyperscale | bool or
+#                                                        foreman_enable_centos_stream8_sig_hyperscale_hotfixes | bool or
+#                                                        foreman_enable_centos_stream8_sig_hyperscale_spin | bool }}"
+# foreman_enable_centos_stream8_sig_hyperscale_hotfixes: false
+# foreman_enable_centos_stream8_sig_hyperscale_spin: false
+# foreman_enable_centos_stream8_sig_hyperscale_experimental: false
+
+### CENTOS STREAM 9
+
+# foreman_enable_centos_stream9: "{{ foreman_enable_centos | bool }}"
+# foreman_enable_centos_stream9_kickstart: "{{ foreman_enable_centos_stream9 | bool }}"
+
+# foreman_enable_centos_stream9_default_ccv: "{{ foreman_enable_centos_default_ccv | bool }}"
+# foreman_enable_centos_stream9_default_ak: "{{ foreman_enable_centos_default_ak | bool }}"
+
+# foreman_enable_centos_stream9_sig_opstools: "{{ foreman_enable_centos_stream9_sig_virtualization_ovirt45 | bool }}"
+# foreman_enable_centos_stream9_sig_nfv: false
+# foreman_enable_centos_stream9_sig_nfv_openvswitch: "{{ foreman_enable_centos_stream9_sig_virtualization_ovirt45 | bool or
+#                                                        foreman_enable_centos_stream9_sig_cloud_openstack_yoga | bool or
+#                                                        foreman_enable_centos_stream9_sig_cloud_openstack_zed | bool or
+#                                                        foreman_enable_centos_stream9_sig_cloud_openstack_antelope | bool }}"
+
+# foreman_enable_centos_stream9_sig_kmods: false
+# foreman_enable_centos_stream9_sig_kmods_main: "{{ foreman_enable_centos_stream9_sig_kmods | bool }}"
+# foreman_enable_centos_stream9_sig_kmods_rebuild: "{{ foreman_enable_centos_stream9_sig_kmods | bool }}"
+# foreman_enable_centos_stream9_sig_kmods_userspace: "{{ foreman_enable_centos_stream9_sig_kmods | bool }}"
+
+# foreman_enable_centos_stream9_sig_messaging: false
+# foreman_enable_centos_stream9_sig_messaging_rabbitmq38: "{{ foreman_enable_centos_stream9_sig_cloud_openstack_yoga | bool or
+#                                                             foreman_enable_centos_stream9_sig_cloud_openstack_zed | bool or
+#                                                             foreman_enable_centos_stream9_sig_cloud_openstack_antelope | bool }}"
+
+# foreman_enable_centos_stream9_sig_cloud: false
+# foreman_enable_centos_stream9_sig_cloud_openstack_client_xena: false
+# foreman_enable_centos_stream9_sig_cloud_openstack_yoga: "{{ foreman_enable_centos_stream9_sig_virtualization_ovirt45 | bool }}"
+# foreman_enable_centos_stream9_sig_cloud_openstack_zed: false
+# foreman_enable_centos_stream9_sig_cloud_openstack_antelope: false
+# foreman_enable_centos_stream9_sig_cloud_openstack_yoga_tested: false
+# foreman_enable_centos_stream9_sig_cloud_openstack_zed_tested: false
+# foreman_enable_centos_stream9_sig_cloud_openstack_antelope_tested: false
+# foreman_enable_centos_stream9_sig_cloud_okd413: false
+# foreman_enable_centos_stream9_sig_cloud_okd414: false
+
+# foreman_enable_centos_stream9_sig_virtualization: false
+# foreman_enable_centos_stream9_sig_virtualization_ovirt45: "{{ foreman_enable_centos_stream9_sig_virtualization | bool }}"
+
+# foreman_enable_centos_stream9_sig_storage: false
+# foreman_enable_centos_stream9_sig_storage_common: "{{ foreman_enable_centos_stream9_sig_storage | bool }}"
+# foreman_enable_centos_stream9_sig_storage_samba414: false
+# foreman_enable_centos_stream9_sig_storage_samba415: false
+# foreman_enable_centos_stream9_sig_storage_samba416: false
+# foreman_enable_centos_stream9_sig_storage_samba417: false
+# foreman_enable_centos_stream9_sig_storage_samba418: false
+# foreman_enable_centos_stream9_sig_storage_gluster9: false
+# foreman_enable_centos_stream9_sig_storage_gluster10: "{{ foreman_enable_centos_stream9_sig_virtualization_ovirt45 | bool }}"
+# foreman_enable_centos_stream9_sig_storage_gluster11: false
+# foreman_enable_centos_stream9_sig_storage_ceph_pacific: "{{ foreman_enable_centos_stream9_sig_virtualization_ovirt45 | bool or
+#                                                             foreman_enable_centos_stream9_sig_cloud_openstack_yoga | bool }}"
+# foreman_enable_centos_stream9_sig_storage_ceph_quincy: "{{ foreman_enable_centos_stream9_sig_cloud_openstack_zed | bool or
+#                                                            foreman_enable_centos_stream9_sig_cloud_openstack_antelope | bool }}"
+# foreman_enable_centos_stream9_sig_storage_nfs_ganesha4: false
+# foreman_enable_centos_stream9_sig_storage_nfs_ganesha5: false
+
+# foreman_enable_centos_stream9_sig_hyperscale: false
+# foreman_enable_centos_stream9_sig_hyperscale_main: "{{ foreman_enable_centos_stream9_sig_hyperscale | bool or
+#                                                        foreman_enable_centos_stream9_sig_hyperscale_spin | bool }}"
+# foreman_enable_centos_stream9_sig_hyperscale_spin: false
+# foreman_enable_centos_stream9_sig_hyperscale_experimental: false
