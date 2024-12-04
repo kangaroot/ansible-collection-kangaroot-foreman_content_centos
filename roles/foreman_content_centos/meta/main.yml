@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  role_name: foreman_content_centos
+  author: "Sven Meeus <sven.meeus@kangaroot.net>"
+  description: "Role for configuring CentOS repositories and CentOS OS related content in a Foreman/Katello installation"
+  license: GPL-3.0-or-later
+  min_ansible_version: "2.13"
+  platforms:
+    - name: CentOS
+      versions:
+        - "7"
+        - "8"
+        - "8 Stream"
+        - "9 Stream"
+  galaxy_tags:
+    - foreman
+    - katello
+    - satellite
+    - centos
+dependencies: []
