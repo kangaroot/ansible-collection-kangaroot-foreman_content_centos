@@ -241,7 +241,7 @@ foreman_operatingsystems_centos7:
   - name: "CentOS"
     major: "7"
     minor: "9.2009"
-    description: "CentO Linux releaseS 7.9.2009 (Core)"
+    description: "CentOS Linux release 7.9.2009 (Core)"
     default_templates: "{{ foreman_operatingsystems_centos7_default_templates | default( foreman_operatingsystems_centos_default_templates | default( foreman_operatingsystems_el_default_templates | default([]) ) ) }}"
     <<: *foreman_operatingsystems_defaults
   - name: "CentOS"
