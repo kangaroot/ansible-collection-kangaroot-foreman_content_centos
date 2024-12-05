@@ -1705,12 +1705,12 @@ foreman_installation_media_centos_main:
     path: "{{ foreman_repo_baseurl_centos_stream8 }}/$major-stream/BaseOS/$arch/os"
     <<: *foreman_installation_media_defaults
     operatingsystems:
-      - CentOS Stream 8
+      - CentOS Stream release 8
   - name: "{{ foreman_media_name_prefix | default('') }}CentOS Stream 9 mirror"
     path: "{{ foreman_repo_baseurl_centos_stream9 }}/$major-stream/BaseOS/$arch/os"
     <<: *foreman_installation_media_defaults
     operatingsystems:
-      - CentOS Stream 9
+      - CentOS Stream release 9
 
 foreman_installation_media_centos: "{{ ( foreman_installation_media_centos_main | default([]) if foreman_enable_centos | bool else [] ) |
 
